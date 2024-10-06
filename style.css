@@ -1,0 +1,184 @@
+@font-face{
+    font-family: mycustomfont;
+    src: url(./assets/fonts/RedHatText-VariableFont_wght.ttf)format('truetype');
+}
+
+*{
+    font-family: 'mycustomfont', Arial, sans-serif;
+}
+.card-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section{
+    display: flex;
+    width: 90%;
+}
+
+.row{
+    display: flex;
+}
+
+#card{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.image_class{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.section, .aside{
+    padding: 40px;
+}
+
+#card button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 215px;
+    left: 45px;
+}
+#title{
+    font-family: 'mycustomfont', Arial, sans-serif;
+    color: blue;
+}
+
+#name{
+    margin-top: 30px;
+}
+.price{
+    color: red;
+    font-family: 'mycustomfont', Arial;
+}
+
+.aside button{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.quantity-text{
+    display: flex;
+    gap: 10px;
+    h4{
+        color: red;
+    }
+    p{
+        font-size: 12px;
+    }
+    align-items: center;
+}
+
+.quantity-text img{
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.quantity-desc{
+    display: flex;
+    justify-content: space-between;
+}
+.aside{
+    h2{
+        color: red;
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #card button {
+        width: 150px;
+        height: 35px;
+        position: static;
+        margin: 10px auto;
+    }
+
+    .image_class {
+        width: 100%;
+    }
+
+    .section, .aside {
+        padding: 20px;
+    }
+
+    .aside button {
+        width: 100%;
+        height: 40px;
+    }
+
+    .quantity-desc {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quantity-text {
+        justify-content: center;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 576px) {
+    #card {
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+
+    #card button {
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        position: absolute;
+        top: 180px;
+        left: 40px;
+    }
+
+    .image_class {
+        width: 50%;
+    }
+
+    .section, .aside {
+        padding: 10px;
+    }
+
+    .aside button {
+        width: 100%;
+        height: 35px;
+    }
+
+    .quantity-desc {
+        justify-content: center;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-section{
+        display: flex;
+        align-items: center;
+    }
+    
+}
